@@ -15,7 +15,7 @@
 #define RST     14   // GPIO14 -- SX127x's RESET
 #define DI00    26   // GPIO26 -- SX127x's IRQ(Interrupt Request)
 
-#define BAND    433E6  //you can set band here directly,e.g. 868E6,915E6
+#define BAND    868E6  //you can set band here directly,e.g. 868E6,915E6
 #define PABOOST true
 
 typedef struct {
@@ -42,12 +42,12 @@ void logo(){
 
 
  
-const char* ssid = "iho-iot";
-const char* password =  "*****";
-const char* mqttServer = "192.168.1.110";
+const char* ssid = "BEARS KINGDOM 2";
+const char* password =  "K@fevark@";
+const char* mqttServer = "192.168.0.151";
 const int mqttPort = 1883;
-const char* mqttUser = "";
-const char* mqttPassword = "";
+const char* mqttUser = "mqttuser";
+const char* mqttPassword = "M1cr0f0n";
  
 WiFiClient espClient;
 PubSubClient client(espClient);
